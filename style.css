@@ -1,0 +1,84 @@
+/* style.css */
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* light gray background */
+  display: flex; /* add this to display elements horizontally */
+  flex-wrap: wrap; /* add this to wrap elements to the next line if necessary */
+  justify-content: center; /* add this to center elements horizontally */
+}
+
+/* Canvas Styles */
+
+#cam {
+  border: 1px solid #ccc; /* light gray border */
+  border-radius: 5px;
+  margin: 20px;
+  width: 320px;
+  height: 240px;
+}
+
+/* Iframe Styles */
+
+.iframe-container {
+  margin: 20px;
+  text-align: center; /* add this to center the iframe and label horizontally */
+}
+
+iframe {
+  border: none;
+  width: 560px;
+  height: 315px;
+  display: block; /* add this to display the iframe as a block element */
+  margin: 0 auto; /* add this to center the iframe horizontally */
+}
+
+.label {
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px; /* add this to add space between the iframe and label */
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 1200px) {
+  #cam {
+    width: 240px;
+    height: 180px;
+  }
+  iframe {
+    width: 420px;
+    height: 235px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #cam {
+    width: 180px;
+    height: 135px;
+  }
+  iframe {
+    width: 300px;
+    height: 170px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #cam {
+    width: 120px;
+    height: 90px;
+  }
+  iframe {
+    width: 200px;
+    height: 115px;
+  }
+}

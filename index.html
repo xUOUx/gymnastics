@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel=stylesheet type="text/css" href="style.css">
+        <script src="//cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.min.js"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    </head>
+    <body>
+        <canvas id = "cam" width="320" height="240"></canvas>
+        <div class="iframe-container">
+            <p id="labeltime" class="label" >Time Label</p>
+            <p id="labelscore" class="label" style="color:red">Score Label</p>
+            <img id="img1" width="460" height="415" src="https://media.gq.com.tw/photos/5dbc4dcb801fc800083f31f3/master/w_1600%2Cc_limit/2018053058351453.jpg">
+            <p id="labelpose" class="label" >Pose Label</p>
+        </div>
+        <script src="camera.js"></script>
+    </body>
+</html>
